@@ -1,0 +1,16 @@
+package com.example.lab8;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class ExampleUnitTest {
+
+    @Test
+    public void testHasCity() {
+        CityManager manager = new CityManager();
+        manager.addCity("Edmonton");
+
+        assertTrue(manager.hasCity("Edmonton"));
+        assertFalse(manager.hasCity("Calgary"));
+    }
+}
