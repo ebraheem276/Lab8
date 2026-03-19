@@ -25,4 +25,17 @@ public class ExampleUnitTest {
         assertFalse(manager.hasCity("Edmonton"));
         assertTrue(manager.hasCity("Calgary"));
     }
+
+    @Test
+    public void testCountCities() {
+        CityManager manager = new CityManager();
+        manager.addCity("Edmonton");
+        manager.addCity("Calgary");
+        manager.addCity("Vancouver");
+
+        assertEquals(3, manager.countCities());
+
+        manager.deleteCity("Calgary");
+        assertEquals(2, manager.countCities());
+    }
 }
