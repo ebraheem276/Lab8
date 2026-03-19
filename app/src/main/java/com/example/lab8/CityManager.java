@@ -20,4 +20,8 @@ public class CityManager {
     public void deleteCity(String city) {
         cities.remove(city);
     }
+
+    public int countCities() {
+        return cities.size();
+    }
 }
