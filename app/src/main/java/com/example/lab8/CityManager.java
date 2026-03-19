@@ -12,4 +12,9 @@ public class CityManager {
     public void addCity(String city) {
         cities.add(city);
     }
+
+    public boolean hasCity(String city) {
+        return cities.contains(city);
+    }
+
 }
