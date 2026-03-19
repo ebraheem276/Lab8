@@ -17,4 +17,7 @@ public class CityManager {
         return cities.contains(city);
     }
 
+    public void deleteCity(String city) {
+        cities.remove(city);
+    }
 }
